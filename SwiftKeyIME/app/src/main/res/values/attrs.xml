@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <!-- Standalone attributes read directly from AttributeSet for reliable AIDE/D8 builds. -->
+    <attr
+        name="settingsTitle"
+        format="string" />
+    <attr
+        name="settingsSubtitle"
+        format="string" />
+    <attr
+        name="settingsIcon"
+        format="reference" />
+    <attr
+        name="settingsHighlighted"
+        format="boolean" />
+    <declare-styleable name="Keyboard">
+        <attr
+            name="keyWidth"
+            format="dimension|fraction" />
+        <attr
+            name="keyHeight"
+            format="dimension|fraction" />
+        <attr
+            name="horizontalGap"
+            format="dimension|fraction" />
+        <attr
+            name="verticalGap"
+            format="dimension|fraction" />
+        <attr
+            name="shiftCapsMode"
+            format="boolean" />
+        <attr
+            name="disablePreview"
+            format="boolean" />
+        <attr name="keyTextWeight">
+            <flag
+                name="small"
+                value="1" />
+            <flag
+                name="normal"
+                value="2" />
+            <flag
+                name="large"
+                value="3" />
+        </attr>
+        <attr name="digitType">
+            <enum
+                name="western"
+                value="0" />
+            <enum
+                name="arabic"
+                value="1" />
+        </attr>
+        <attr name="keyboardLayout">
+            <enum
+                name="english_us"
+                value="0" />
+            <enum
+                name="azerty"
+                value="1" />
+            <enum
+                name="qwertz"
+                value="2" />
+            <enum
+                name="dvorak"
+                value="3" />
+            <enum
+                name="colemak"
+                value="4" />
+            <enum
+                name="qzerty"
+                value="5" />
+            <enum
+                name="arabic_original"
+                value="6" />
+            <enum
+                name="arabic_digits"
+                value="7" />
+            <enum
+                name="arabic_pc"
+                value="8" />
+            <enum
+                name="arabic_azerty"
+                value="9" />
+            <enum
+                name="arabic_extended"
+                value="10" />
+            <enum
+                name="arabic_mac"
+                value="11" />
+            <enum
+                name="arabic_phonetic"
+                value="12" />
+            <enum
+                name="arabic_typewriter"
+                value="13" />
+        <enum
+            name="arabic_102"
+            value="14" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="Keyboard_Row">
+        <attr name="rowEdgeFlags">
+            <flag
+                name="top"
+                value="4" />
+            <flag
+                name="bottom"
+                value="8" />
+        </attr>
+        <attr
+            name="keyboardMode"
+            format="reference" />
+        <attr name="rowType">
+            <flag
+                name="normal"
+                value="0" />
+            <flag
+                name="extended"
+                value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="Keyboard_Key">
+        <attr
+            name="codes"
+            format="integer|string" />
+        <attr
+            name="shiftCodes"
+            format="integer|string" />
+        <attr
+            name="keyIcon"
+            format="reference" />
+        <attr
+            name="keyIconId"
+            format="integer" />
+        <attr
+            name="keyLabel"
+            format="string" />
+        <attr
+            name="shiftLabel"
+            format="string" />
+        <attr
+            name="trailLabel"
+            format="string" />
+        <attr
+            name="iconPreview"
+            format="reference" />
+        <attr
+            name="isSpacer"
+            format="boolean" />
+        <attr
+            name="isSticky"
+            format="boolean" />
+        <attr
+            name="isAction"
+            format="boolean" />
+        <attr
+            name="fullTextSize"
+            format="boolean" />
+        <attr
+            name="isIconic"
+            format="boolean" />
+        <attr
+            name="isRepeatable"
+            format="boolean" />
+        <attr
+            name="isModifier"
+            format="boolean" />
+        <attr
+            name="hidePopupPreview"
+            format="boolean" />
+        <attr
+            name="popupKeyboard"
+            format="reference" />
+        <attr
+            name="popupCharacters"
+            format="string" />
+        <attr
+            name="keyOutputText"
+            format="string" />
+        <attr name="keyEdgeFlags">
+            <flag
+                name="left"
+                value="1" />
+            <flag
+                name="right"
+                value="2" />
+        </attr>
+        <attr name="keyContext">
+            <enum
+                name="normal"
+                value="0" />
+            <enum
+                name="search"
+                value="1" />
+            <enum
+                name="send"
+                value="2" />
+            <enum
+                name="next"
+                value="3" />
+            <enum
+                name="done"
+                value="4" />
+            <enum
+                name="url"
+                value="5" />
+            <enum
+                name="email"
+                value="6" />
+            <enum
+                name="phone"
+                value="7" />
+        </attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,3 @@
+# Local-only configuration. Copy to local.properties and fill in values locally.
+# Never commit local.properties or put tokens in source control.
+THEMATY_GITHUB_TOKEN=

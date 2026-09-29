@@ -1,0 +1,17 @@
+# Android/Gradle generated output
+SwiftKeyIME/.gradle/
+SwiftKeyIME/app/build/
+SwiftKeyIME/build/
+SwiftKeyIME/local.properties
+
+# Python/test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# IDE metadata
+.idea/
+*.iml
+
+# Generated release archives
+*.zip

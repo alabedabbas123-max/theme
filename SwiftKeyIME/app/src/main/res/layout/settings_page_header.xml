@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="58dp"
+    android:background="#FFFFFF">
+    <ImageButton
+        android:id="@+id/settings_page_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="right|center_vertical"
+        android:background="@android:color/transparent"
+        android:contentDescription="رجوع"
+        android:padding="14dp"
+        android:src="@drawable/ic_chevron_right" />
+    <TextView
+        android:id="@+id/settings_page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#15171A"
+        android:textSize="19sp" />
+    <ImageButton
+        android:id="@+id/settings_page_gear"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_gravity="left|center_vertical"
+        android:background="@android:color/transparent"
+        android:contentDescription="إعدادات هذا القسم"
+        android:padding="12dp"
+        android:src="@drawable/ic_settings"
+        android:visibility="gone" />
+    <ImageButton
+        android:id="@+id/settings_page_more"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginLeft="46dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="خيارات القائمة"
+        android:padding="12dp"
+        android:src="@drawable/ic_more"
+        android:visibility="gone" />
+</FrameLayout>

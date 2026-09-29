@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Keyboard xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Row app:keyboardMode="@xml/method">
+        <Key
+            app:codes="-3"
+            app:keyContext="search"
+            app:keyIcon="@drawable/ic_search" />
+        <Key
+            app:codes="-3"
+            app:keyContext="send"
+            app:keyIcon="@drawable/ic_send" />
+        <Key
+            app:codes="-3"
+            app:keyContext="next"
+            app:keyIcon="@drawable/ic_next" />
+        <Key
+            app:codes="-3"
+            app:keyContext="done"
+            app:keyIcon="@drawable/ic_done" />
+        <Key
+            app:codes="-3"
+            app:keyContext="url"
+            app:keyIcon="@drawable/ic_next" />
+    </Row>
+</Keyboard>

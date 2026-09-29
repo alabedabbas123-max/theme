@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tool_bar_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:layoutDirection="ltr"
+    android:scrollbars="none"
+    android:overScrollMode="never">
+    <com.almlk.swiftkey.ime.ThemeDecorationBarLayout
+        android:id="@+id/tool_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:minWidth="320dp"
+        android:orientation="horizontal"
+        android:layoutDirection="ltr"
+        android:gravity="center_vertical"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp">
+        <ImageButton
+            android:id="@+id/tool_more"
+            style="@style/ImeToolButton"
+            android:src="@drawable/ic_more" />
+        <ImageButton
+            android:id="@+id/tool_search"
+            style="@style/ImeToolButton"
+            android:src="@drawable/ic_search" />
+        <ImageButton
+            android:id="@+id/tool_mic"
+            style="@style/ImeToolButton"
+            android:src="@drawable/ic_mic" />
+        <ImageButton
+            android:id="@+id/tool_translate"
+            style="@style/ImeToolButton"
+            android:src="@drawable/ic_translate" />
+        <ImageButton
+            android:id="@+id/tool_clipboard"
+            style="@style/ImeToolButton"
+            android:src="@drawable/ic_clipboard" />
+        <ImageButton
+            android:id="@+id/tool_emoji"
+            style="@style/ImeToolButton"
+            android:src="@drawable/ic_emoji" />
+        <ImageButton
+            android:id="@+id/tool_ai"
+            style="@style/ImeToolButton"
+            android:src="@drawable/ic_ai" />
+        <ImageButton
+            android:id="@+id/tool_settings"
+            style="@style/ImeToolButton"
+            android:src="@drawable/ic_settings"
+            android:visibility="gone" />
+        <ImageButton
+            android:id="@+id/tool_theme"
+            style="@style/ImeToolButton"
+            android:src="@drawable/ic_palette"
+            android:visibility="gone" />
+        <ImageButton
+            android:id="@+id/tool_resize"
+            style="@style/ImeToolButton"
+            android:src="@drawable/ic_resize"
+            android:visibility="gone" />
+        <ImageButton
+            android:id="@+id/tool_layouts"
+            style="@style/ImeToolButton"
+            android:src="@drawable/ic_keyboard"
+            android:visibility="gone" />
+        <ImageButton
+            android:id="@+id/tool_gif"
+            style="@style/ImeToolButton"
+            android:src="@drawable/ic_gif"
+            android:visibility="gone" />
+        <ImageButton
+            android:id="@+id/tool_languages"
+            style="@style/ImeToolButton"
+            android:src="@drawable/ic_language"
+            android:visibility="gone" />
+        <ImageButton
+            android:id="@+id/tool_incognito"
+            style="@style/ImeToolButton"
+            android:src="@drawable/ic_incognito"
+            android:visibility="gone" />
+        <ImageButton
+            android:id="@+id/tool_modes"
+            style="@style/ImeToolButton"
+            android:src="@drawable/ic_symbols"
+            android:visibility="gone" />
+    </com.almlk.swiftkey.ime.ThemeDecorationBarLayout>
+</HorizontalScrollView>

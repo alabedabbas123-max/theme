@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- keyLabel: الحرف الرئيسي، trailLabel: الرمز الصغير أعلى المفتاح، popupCharacters: البدائل -->
+<Keyboard
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:keyHeight="48dp"
+    app:keyWidth="8.33%p"
+    app:horizontalGap="3dp"
+    app:verticalGap="3dp"
+    app:disablePreview="false"
+    app:keyTextWeight="normal"
+    app:digitType="western"
+    app:keyboardLayout="arabic_pc">
+    <Row
+        app:rowEdgeFlags="top"
+        app:rowType="extended">
+        <Key
+            android:codes="49"
+            android:keyLabel="1" />
+        <Key
+            android:codes="50"
+            android:keyLabel="2" />
+        <Key
+            android:codes="51"
+            android:keyLabel="3" />
+        <Key
+            android:codes="52"
+            android:keyLabel="4" />
+        <Key
+            android:codes="53"
+            android:keyLabel="5" />
+        <Key
+            android:codes="54"
+            android:keyLabel="6" />
+        <Key
+            android:codes="55"
+            android:keyLabel="7" />
+        <Key
+            android:codes="56"
+            android:keyLabel="8" />
+        <Key
+            android:codes="57"
+            android:keyLabel="9" />
+        <Key
+            android:codes="48"
+            android:keyLabel="0" />
+    </Row>
+    <Row>
+        <Key
+            android:codes="1590"
+            android:keyLabel="ض"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="ڞﺾﺿ1١"
+            app:trailLabel="ڞ" />
+        <Key
+            android:codes="1589"
+            android:keyLabel="ص"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="ڝﺹﺻ2٢"
+            app:trailLabel="ڝ" />
+        <Key
+            android:codes="1579"
+            android:keyLabel="ث"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="ﺙﺚﺛ3٣ٹٺٿ"
+            app:trailLabel="ﺙ" />
+        <Key
+            android:codes="1602"
+            android:keyLabel="ق"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="ﻘﻗﻕﭱﭰﭯﭮڨڧڦᓆ3٣"
+            app:trailLabel="ﻘ" />
+        <Key
+            android:codes="1601"
+            android:keyLabel="ف"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="ᓅ4٤ڥڤڣڢڡﭭﭬﭫﭪ"
+            app:trailLabel="ᓅ" />
+        <Key
+            android:codes="1594"
+            android:keyLabel="غ"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="5٥ڠۼﻍﻎﻏﻐ"
+            app:trailLabel="5" />
+        <Key
+            android:codes="1593"
+            android:keyLabel="ع"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="6٦۶ζξﻉ؏ﻊﻋﻌ"
+            app:trailLabel="6" />
+        <Key
+            android:codes="1607"
+            android:keyLabel="ه"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="7٧ﮤﮥﮨﮩﮪﮫْہۂᓇ"
+            app:trailLabel="7" />
+        <Key
+            android:codes="1582"
+            android:keyLabel="خ"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="8٨ڿځﺥﺦﺨﺧڂڅ"
+            app:trailLabel="8" />
+        <Key
+            android:codes="1581"
+            android:keyLabel="ح"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="9٩בζﺡﺢﺣﮁﭿ"
+            app:trailLabel="9" />
+        <Key
+            android:codes="1580"
+            android:keyLabel="ج"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="0٠ﺝﺞﺟﭲﭳﭴﭶﭷﭸﭺﭻﭼﭾ"
+            app:trailLabel="0" />
+        <Key
+            android:codes="1583"
+            android:keyLabel="د"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="ﺩﺪذڈډڊ"
+            app:trailLabel="ﺩ" />
+    </Row>
+    <Row>
+        <Key
+            android:codes="1588"
+            android:keyLabel="ش"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="ﺵﺶﺷڜۺ"
+            app:trailLabel="ﺵ" />
+        <Key
+            android:codes="1587"
+            android:keyLabel="س"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="ﺱﺲﺳښڛ"
+            app:trailLabel="ﺱ" />
+        <Key
+            android:codes="1610"
+            android:keyLabel="ي"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="ﻱﻲﻳﻴىئېےۍ"
+            app:trailLabel="ﻱ" />
+        <Key
+            android:codes="1576"
+            android:keyLabel="ب"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="پﺏﺐﺑﺒٻڀ"
+            app:trailLabel="پ" />
+        <Key
+            android:codes="1604"
+            android:keyLabel="ل"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="ﻝﻞﻟﻠﻻﻷﻹﻵ"
+            app:trailLabel="ﻝ" />
+        <Key
+            android:codes="1575"
+            android:keyLabel="ا"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="ﺍﺎأإآٱ"
+            app:trailLabel="ﺍ" />
+        <Key
+            android:codes="1578"
+            android:keyLabel="ت"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="ﺕﺖﺗﺘةٹٺ"
+            app:trailLabel="ﺕ" />
+        <Key
+            android:codes="1606"
+            android:keyLabel="ن"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="ﻥﻦﻧﻨںڻڼ"
+            app:trailLabel="ﻥ" />
+        <Key
+            android:codes="1605"
+            android:keyLabel="م"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="ﻡﻢﻣﻤ۾"
+            app:trailLabel="ﻡ" />
+        <Key
+            android:codes="1603"
+            android:keyLabel="ك"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="ﻙﻚﻛﻜڪګگ"
+            app:trailLabel="ﻙ" />
+        <Key
+            android:codes="1584"
+            android:keyLabel="ذ"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="ـّ٪"
+            app:trailLabel="ـ" />
+    </Row>
+    <Row>
+        <Key
+            android:codes="1574"
+            android:keyLabel="ئ"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="ﺉﺊﺋﺌيى"
+            app:trailLabel="ﺉ" />
+        <Key
+            android:codes="1569"
+            android:keyLabel="ء"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="ﺀٕٔ"
+            app:trailLabel="ﺀ" />
+        <Key
+            android:codes="1572"
+            android:keyLabel="ؤ"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="ﺅﺆو"
+            app:trailLabel="ﺅ" />
+        <Key
+            android:codes="1585"
+            android:keyLabel="ر"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="ﺭﺮڑڕ"
+            app:trailLabel="ﺭ" />
+        <Key
+            android:codes="1609"
+            android:keyLabel="ى"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="ﻯﻰيئ"
+            app:trailLabel="ﻯ" />
+        <Key
+            android:codes="1577"
+            android:keyLabel="ة"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="ﺓﺔهت"
+            app:trailLabel="ﺓ" />
+        <Key
+            android:codes="1608"
+            android:keyLabel="و"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="ﻭﻮؤۆۇ"
+            app:trailLabel="ﻭ" />
+        <Key
+            android:codes="1586"
+            android:keyLabel="ز"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="ﺯﺰژڗ"
+            app:trailLabel="ﺯ" />
+        <Key
+            android:codes="1591"
+            android:keyLabel="ط"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="ﻁﻂﻃﻄٹ"
+            app:trailLabel="ﻁ" />
+        <Key
+            android:codes="1592"
+            android:keyLabel="ظ"
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:popupCharacters="ﻅﻆﻇﻈڟ"
+            app:trailLabel="ﻅ" />
+        <Key android:codes="-2" android:keyIcon="@drawable/ic_backspace" android:isRepeatable="true" />
+    </Row>
+    <Row app:rowEdgeFlags="bottom">
+        <Key android:codes="-4" android:keyLabel="123" />
+                <Key android:codes="-6" android:keyIcon="@drawable/ic_emoji" />
+                <Key android:codes="-7" android:keyLabel="،" />
+                <Key android:codes="32" android:keyLabel="العربية" android:keyOutputText=" " />
+                <Key android:codes="46" android:keyLabel="."
+            app:trailLabel="!" android:popupKeyboard="@xml/kbd_popup_template" android:popupCharacters="! . ، ؛" />
+                <Key android:codes="-3" android:keyIcon="@drawable/ic_enter" app:isAction="true" />
+    </Row>
+</Keyboard>

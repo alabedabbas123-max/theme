@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+    <!-- The whole VISIBLE keyboard block (voice panel is gone in practice, see audit 06:11):
+         the resize scrim mirrors exactly this column's measured height from the IME root —
+         frame ≡ block, so no empty band can open anywhere inside the frame. -->
+    <include
+        layout="@layout/voice_input_panel"
+        android:layout_width="match_parent"
+        android:layout_height="64dp" />
+    <include
+        layout="@layout/ime_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <include
+        layout="@layout/standard_keyboard_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.almlk.swiftkey.ime.MoreToolsPanelView
+        android:id="@+id/more_tools_panel"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:visibility="gone" />
+    <com.almlk.swiftkey.ime.ClipboardPanelView
+        android:id="@+id/clipboard_panel"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:visibility="gone" />
+    <com.almlk.swiftkey.ime.LayoutsPanelView
+        android:id="@+id/layouts_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+</LinearLayout>

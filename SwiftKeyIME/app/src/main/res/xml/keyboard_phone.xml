@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Keyboard
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:keyHeight="57dp">
+    <Row>
+        <Key
+            app:codes="1"
+            app:keyLabel="1" />
+        <Key
+            app:codes="2"
+            app:keyLabel="2" />
+        <Key
+            app:codes="3"
+            app:keyLabel="3" />
+    </Row>
+    <Row>
+        <Key
+            app:codes="4"
+            app:keyLabel="4" />
+        <Key
+            app:codes="5"
+            app:keyLabel="5" />
+        <Key
+            app:codes="6"
+            app:keyLabel="6" />
+        <Key
+            app:codes="+"
+            app:keyLabel="+" />
+    </Row>
+    <Row>
+        <Key
+            app:codes="7"
+            app:keyLabel="7" />
+        <Key
+            app:codes="8"
+            app:keyLabel="8" />
+        <Key
+            app:codes="9"
+            app:keyLabel="9" />
+        <Key
+            app:codes="-2"
+            app:keyIcon="@drawable/ic_backspace"
+            app:isRepeatable="true" />
+    </Row>
+    <Row>
+        <Key
+            app:codes="*"
+            app:keyLabel="*" />
+        <Key
+            app:codes="0"
+            app:keyLabel="0" />
+        <Key
+            app:codes="\#"
+            app:keyLabel="\#" />
+        <Key
+            app:codes="-3"
+            app:keyIcon="@drawable/ic_enter" />
+    </Row>
+</Keyboard>

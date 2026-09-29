@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/normal_suggestion_row"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:layoutDirection="ltr"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="4dp">
+
+    <View
+        android:id="@+id/suggestion_left_spacer"
+        android:layout_width="34dp"
+        android:layout_height="38dp"
+        android:layout_marginRight="5dp"
+        android:background="@android:color/transparent"
+        android:importantForAccessibility="no" />
+
+    <LinearLayout
+        android:id="@+id/suggestion_strip"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        android:weightSum="3" />
+
+    <ImageButton
+        android:id="@+id/tool_bar_toggle"
+        android:layout_width="34dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="5dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="إظهار أو إخفاء شريط الأدوات"
+        android:padding="10dp"
+        android:src="@drawable/ic_chevron_down" />
+</LinearLayout>

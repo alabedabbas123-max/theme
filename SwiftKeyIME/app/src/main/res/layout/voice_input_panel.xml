@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.almlk.swiftkey.ime.VoiceInputPanelView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/voice_input_panel"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:orientation="horizontal"
+    android:layoutDirection="ltr"
+    android:gravity="center_vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="5dp"
+    android:visibility="gone">
+    <com.almlk.swiftkey.ime.VoiceLevelView
+        android:id="@+id/voice_level"
+        android:layout_width="62dp"
+        android:layout_height="52dp"
+        android:contentDescription="مستوى الصوت" />
+    <TextView
+        android:id="@+id/voice_status"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical|right"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingLeft="7dp"
+        android:paddingRight="9dp"
+        android:text="التحدث الآن"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/voice_language"
+        android:layout_width="64dp"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:text="AR"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <ImageButton
+        android:id="@+id/voice_close"
+        android:layout_width="47dp"
+        android:layout_height="52dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="إغلاق الاستماع"
+        android:padding="13dp"
+        android:src="@drawable/ic_chevron_right" />
+</com.almlk.swiftkey.ime.VoiceInputPanelView>

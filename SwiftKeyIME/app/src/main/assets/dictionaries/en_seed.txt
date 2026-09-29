@@ -1,0 +1,10 @@
+the 1000
+hello 950
+how 920
+are 900
+you 890
+thank 850
+yes 820
+no 810
+this 800
+that 790
