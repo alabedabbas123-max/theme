@@ -63,7 +63,8 @@ if [ "$(find "$SRC" -mindepth 1 -maxdepth 1 | wc -l)" -eq 1 ] \
 fi
 
 echo "==> نسخ الملفات إلى $ROOT ..."
-rsync -a --exclude '.git/' "$SRC"/ "$ROOT"/
+rm -rf "$SRC/.git"          # لا ندمج تاريخ git الخاص بالأرشيف
+cp -a "$SRC"/. "$ROOT"/
 
 echo "✓ تم. محتويات المشروع:"
 ls -la "$ROOT"
