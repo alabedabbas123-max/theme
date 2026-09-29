@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="app_name">كيبورد الملك</string>
+    <string name="ime_name">كيبورد الملك</string>
+    <string name="arabic">العربية</string>
+    <string name="english">English (US)</string>
+    <string name="setup_title">إعداد كيبورد الملك</string>
+    <string name="setup_subtitle">لوحة عربية وإنجليزية ذكية، سريعة وخاصة</string>
+    <string name="setup_section">البدء والاستخدام</string>
+    <string name="enable_keyboard">١. تفعيل لوحة المفاتيح</string>
+    <string name="select_keyboard">٢. اختيار كيبورد الملك</string>
+    <string name="import_dictionary">استيراد قاموس كلمات</string>
+    <string name="import_help">صيغة القاموس: كلمة ثم تردد اختياري في كل سطر، مثال: مرحبا 900</string>
+    <string name="import_done">تم استيراد %1$d كلمة</string>
+    <string name="theme_title">المظهر</string>
+    <string name="behavior_title">الكتابة والتغذية الراجعة</string>
+    <string name="learning">تعلّم الكلمات محليًا</string>
+    <string name="sound">صوت ضغط المفاتيح</string>
+    <string name="key_popup_preview">إظهار نافذة مكبرة للحرف أثناء الضغط</string>
+    <string name="alternative_popup_sticky">إبقاء نافذة الحروف البديلة حتى الاختيار</string>
+    <string name="alternative_popup_sticky_description">عند التفعيل تبقى نافذة البدائل مفتوحة حتى لمس حرف، وعند التعطيل يتم الاختيار بالسحب والإفلات</string>
+    <string name="vibration">اهتزاز المفاتيح</string>
+    <string name="privacy">الخصوصية: التعلّم والقواميس محفوظة محليًا على جهازك، ولا تجمع اللوحة كلمات حقول كلمات المرور.</string>
+    <string name="clear_learned">حذف الكلمات المتعلّمة</string>
+    <string name="light">فاتح</string>
+    <string name="dark">داكن</string>
+    <string name="blue">أزرق</string>
+    <string name="dictionary_title">القواميس والخصوصية</string>
+    <string name="dictionary_error">تعذر الاستيراد: %1$s</string>
+    <string name="learned_cleared">تم حذف الكلمات المتعلّمة</string>
+    <string name="settings_error">تعذر فتح الإعدادات: %1$s</string>
+    <string name="diagnostics_title">التشخيص وسجل الأخطاء</string>
+    <string name="open_error_log">عرض سجل الأخطاء</string>
+    <string name="error_log_title">سجل أخطاء كيبورد الملك</string>
+    <string name="error_status_clean">لا توجد أعطال مسجلة</string>
+    <string name="error_status_found">توجد تقارير أعطال محفوظة محليًا</string>
+    <string name="error_log_empty">السجل فارغ حاليًا</string>
+    <string name="error_log_cleared">تم مسح سجل الأخطاء</string>
+    <string name="error_log_copied">تم نسخ سجل الأخطاء</string>
+    <string name="error_share_title">مشاركة تقرير الأخطاء</string>
+    <string name="error_share">مشاركة</string>
+    <string name="error_copy">نسخ</string>
+    <string name="error_clear">مسح</string>
+    <string name="error_back">رجوع</string>
+    <string name="error_privacy">التقارير محفوظة داخل التطبيق ولا تُرسل تلقائيًا.</string>
+</resources>

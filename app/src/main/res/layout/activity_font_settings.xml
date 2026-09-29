@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+    <include layout="@layout/settings_page_header" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="14dp">
+            <TextView
+                style="@style/SettingsSectionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="معاينة" />
+            <TextView
+                android:id="@+id/font_preview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="مرحباً بك في لوحة المفاتيح 123 ABC"
+                android:textColor="#212121"
+                android:textSize="22sp" />
+            <TextView
+                style="@style/SettingsSectionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"
+                android:text="خط أزرار الكيبورد" />
+            <RadioGroup
+                android:id="@+id/font_override_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/font_override_default"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="افتراضي حسب السمة" />
+                <RadioButton
+                    android:id="@+id/font_override_sans"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="عام Sans" />
+                <RadioButton
+                    android:id="@+id/font_override_serif"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Serif كلاسيكي" />
+                <RadioButton
+                    android:id="@+id/font_override_condensed"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="مكثف" />
+                <RadioButton
+                    android:id="@+id/font_override_mono"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="أحادي المسافة Mono" />
+                <RadioButton
+                    android:id="@+id/font_override_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="خفيف Light" />
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="اختيار أي خط هنا يطبقه على أزرار الكيبورد في كل السمات."
+                android:textColor="#777777"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

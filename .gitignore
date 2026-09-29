@@ -1,0 +1,12 @@
+local.properties
+.gradle/
+build/
+app/build/
+
+# --- إضافات Arena ---
+local.properties
+*.apk
+*.dex
+.idea/
+*.iml
+.DS_Store

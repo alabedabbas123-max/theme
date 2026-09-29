@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/translation_root"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:orientation="vertical"
+    android:background="#5D8FC9">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        android:layoutDirection="ltr"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+        <TextView
+            android:id="@+id/translation_to"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="العربية"
+            android:textSize="14sp" />
+        <ImageButton
+            android:id="@+id/translation_swap"
+            android:layout_width="42dp"
+            android:layout_height="38dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_swap"
+            android:background="@drawable/bg_icon_button"
+            android:contentDescription="تبديل اللغات" />
+        <TextView
+            android:id="@+id/translation_from"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="English"
+            android:textSize="14sp" />
+        <ImageButton
+            android:id="@+id/translation_close"
+            android:layout_width="42dp"
+            android:layout_height="38dp"
+            android:padding="9dp"
+            android:src="@drawable/ic_chevron_down"
+            android:background="@drawable/bg_icon_button"
+            android:contentDescription="إغلاق الترجمة" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal"
+        android:layoutDirection="ltr"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="4dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:background="@drawable/bg_emoji_search">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_edit" />
+            <TextView
+                android:id="@+id/translation_source"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:gravity="center_vertical|right"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="14sp"
+                android:hint="اكتب النص المراد ترجمته" />
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/translation_insert"
+            android:layout_width="42dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_chevron_right"
+            android:background="@drawable/bg_icon_button"
+            android:contentDescription="ترجمة وإدراج" />
+    </LinearLayout>
+</LinearLayout>

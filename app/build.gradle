@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withInputStream { stream ->
+        localProperties.load(stream)
+    }
+}
+def thematyGithubToken = localProperties.getProperty('THEMATY_GITHUB_TOKEN', System.getenv('THEMATY_GITHUB_TOKEN') ?: '')
+def escapedThematyGithubToken = thematyGithubToken.replace('\\', '\\\\').replace('"', '\\"')
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "33.0.0"
+
+    defaultConfig {
+        applicationId 'com.almlk.swiftkey'
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 45
+        versionName '1.9-round45'
+
+        vectorDrawables.useSupportLibrary = true
+        buildConfigField 'String', 'THEMATY_GITHUB_TOKEN', '"' + escapedThematyGithubToken + '"'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_6
+        targetCompatibility JavaVersion.VERSION_1_6
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+}

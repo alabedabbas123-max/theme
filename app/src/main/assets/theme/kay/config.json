@@ -1,0 +1,20 @@
+{
+  "name": "كاي الذهبية",
+  "background": "#17120C",
+  "key": "#D9B45C",
+  "pressed": "#A8833A",
+  "text": "#241A08",
+  "sub": "#6E5A2C",
+  "accent": "#D4AF37",
+  "bottom": "#D9B45C",
+  "radius": 7,
+  "mainSize": 26,
+  "subSize": 13,
+  "opacity": 1.0,
+  "dim": 0,
+  "images": {
+    "keyboard": "bg.webp",
+    "key": "key.png",
+    "space": "space.png"
+  }
+}

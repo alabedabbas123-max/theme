@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- AOSP-compatible template referenced by android:popupKeyboard on every letter key. -->
+<Keyboard
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="48dp"
+    android:keyHeight="58dp"
+    android:horizontalGap="2dp"
+    android:verticalGap="0dp">
+    <Row/>
+</Keyboard>

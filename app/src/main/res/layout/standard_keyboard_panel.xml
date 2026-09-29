@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/standard_keyboard_panel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <com.almlk.swiftkey.ime.TranslationPanelView
+        android:id="@+id/translation_panel"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:visibility="gone" />
+    <include
+        layout="@layout/emoji_search_header"
+        android:layout_width="match_parent"
+        android:layout_height="96dp" />
+    <include
+        layout="@layout/suggestion_row"
+        android:layout_width="match_parent"
+        android:layout_height="46dp" />
+    <TextView
+        android:id="@+id/language_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#2E73DB"
+        android:visibility="invisible" />
+    <com.almlk.swiftkey.ime.SmartKeyboardView
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:keyHeight="48dp"
+        app:horizontalGap="3dp"
+        app:verticalGap="3dp"
+        app:keyTextWeight="normal"
+        app:disablePreview="false" />
+</LinearLayout>

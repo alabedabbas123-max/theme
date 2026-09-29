@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <!-- AndroidX theme used only by the launcher/settings activity. -->
+    <style
+        name="BaseAppTheme"
+        parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowBackground">@color/surface</item>
+        <item name="android:textColorHighlight">#66315EA8</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style
+        name="AppTheme"
+        parent="BaseAppTheme" />
+    <!-- Keep the IME on the framework input-method theme. AppCompat activity themes must never be applied to InputMethodService because they can create a panel- sized/floating soft-input window on some Android and OEM builds. -->
+    <style
+        name="ImeTheme"
+        parent="android:style/Theme.InputMethod">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+    <style name="SettingsHomeSection">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:gravity">right|bottom</item>
+        <item name="android:paddingRight">62dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:textColor">#454545</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="SettingsHomeRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">58dp</item>
+    </style>
+    <style
+        name="SettingsHomeAccountRow"
+        parent="SettingsHomeRow">
+        <item name="android:layout_height">76dp</item>
+    </style>
+    <style
+        name="ThemeColorControl"
+        parent="android:style/Widget.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style
+        name="SettingsPrimaryButton"
+        parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style
+        name="SettingsSecondaryButton"
+        parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style
+        name="SettingsSectionTitle"
+        parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style
+        name="ImeToolButton"
+        parent="android:style/Widget.ImageButton">
+        <item name="android:layout_width">44dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:background">@drawable/bg_icon_button</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:contentDescription">أداة لوحة المفاتيح</item>
+    </style>
+    <style
+        name="EmojiTopButton"
+        parent="android:style/Widget.ImageButton">
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/bg_icon_button</item>
+    </style>
+</resources>

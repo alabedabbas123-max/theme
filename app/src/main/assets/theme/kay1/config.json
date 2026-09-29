@@ -1,0 +1,7 @@
+{
+  "name": "كاي القلب",
+  "background": "#550E1C", "key": "#C2102E", "pressed": "#8F0D22",
+  "text": "#FFFFFF", "sub": "#EEC7CE", "accent": "#FFFFFF", "bottom": "#C2102E",
+  "radius": 7, "mainSize": 26, "subSize": 13,
+  "images": { "keyboard": "bg.webp", "key": "key.png", "space": "space.png" }
+}
