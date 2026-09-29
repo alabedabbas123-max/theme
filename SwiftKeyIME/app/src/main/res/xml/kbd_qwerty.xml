@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Keyboard
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:keyHeight="48dp"
+    app:keyWidth="10%p"
+    app:horizontalGap="3dp"
+    app:verticalGap="3dp"
+    app:disablePreview="false"
+    app:keyTextWeight="normal"
+app:digitType="western"
+    app:keyboardLayout="english_us">
+    <Row
+        app:rowEdgeFlags="top"
+        app:rowType="extended">
+        <Key
+            android:codes="49"
+            android:keyLabel="1" />
+        <Key
+            android:codes="50"
+            android:keyLabel="2" />
+        <Key
+            android:codes="51"
+            android:keyLabel="3" />
+        <Key
+            android:codes="52"
+            android:keyLabel="4" />
+        <Key
+            android:codes="53"
+            android:keyLabel="5" />
+        <Key
+            android:codes="54"
+            android:keyLabel="6" />
+        <Key
+            android:codes="55"
+            android:keyLabel="7" />
+        <Key
+            android:codes="56"
+            android:keyLabel="8" />
+        <Key
+            android:codes="57"
+            android:keyLabel="9" />
+        <Key
+            android:codes="48"
+            android:keyLabel="0" />
+    </Row>
+    <Row app:rowType="normal">
+        <Key
+            android:codes="113"
+            android:keyLabel="q"
+            app:trailLabel="%" />
+        <Key
+            android:codes="119"
+            android:keyLabel="w"
+            app:trailLabel="^" />
+        <Key
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:codes="101"
+            android:keyLabel="e"
+            android:popupCharacters="é è ê ë"
+            app:trailLabel="~" />
+        <Key
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:codes="114"
+            android:keyLabel="r"
+            android:popupCharacters="ř"
+            app:trailLabel="|" />
+        <Key
+            android:codes="116"
+            android:keyLabel="t"
+            app:trailLabel="[" />
+        <Key
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:codes="121"
+            android:keyLabel="y"
+            android:popupCharacters="ý ÿ"
+            app:trailLabel="]" />
+        <Key
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:codes="117"
+            android:keyLabel="u"
+            android:popupCharacters="ú ù û ü"
+            app:trailLabel="&lt;" />
+        <Key
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:codes="105"
+            android:keyLabel="i"
+            android:popupCharacters="í ì î ï"
+            app:trailLabel="&gt;" />
+        <Key
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:codes="111"
+            android:keyLabel="o"
+            android:popupCharacters="ó ò ô ö œ õ"
+            app:trailLabel="{" />
+        <Key
+            android:codes="112"
+            android:keyLabel="p"
+            app:trailLabel="}" />
+    </Row>
+    <Row app:rowType="normal">
+        <Key
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:codes="97"
+            android:keyLabel="a"
+            android:popupCharacters="á à â ä æ ã å"
+            app:trailLabel="\@" />
+        <Key
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:codes="115"
+            android:keyLabel="s"
+            android:popupCharacters="ß"
+            app:trailLabel="\#" />
+        <Key
+            android:codes="100"
+            android:keyLabel="d"
+            app:trailLabel="&amp;" />
+        <Key
+            android:codes="102"
+            android:keyLabel="f"
+            app:trailLabel="*" />
+        <Key
+            android:codes="103"
+            android:keyLabel="g"
+            app:trailLabel="-" />
+        <Key
+            android:codes="104"
+            android:keyLabel="h"
+            app:trailLabel="+" />
+        <Key
+            android:codes="106"
+            android:keyLabel="j"
+            app:trailLabel="=" />
+        <Key
+            android:codes="107"
+            android:keyLabel="k"
+            app:trailLabel="(" />
+        <Key
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:codes="108"
+            android:keyLabel="l"
+            android:popupCharacters="ł"
+            app:trailLabel=")" />
+    </Row>
+    <Row app:rowType="normal">
+        <Key
+            android:codes="-1"
+            android:keyEdgeFlags="left"
+            android:keyIcon="@drawable/ic_shift"
+            android:isModifier="true"
+            android:isSticky="true" />
+        <Key
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:codes="122"
+            android:keyLabel="z"
+            android:popupCharacters="ž"
+            app:trailLabel="_" />
+        <Key
+            android:codes="120"
+            android:keyLabel="x"
+            app:trailLabel="$" />
+        <Key
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:codes="99"
+            android:keyLabel="c"
+            android:popupCharacters="ç"
+            app:trailLabel="&quot;" />
+        <Key
+            android:codes="118"
+            android:keyLabel="v"
+            app:trailLabel="'" />
+        <Key
+            android:codes="98"
+            android:keyLabel="b"
+            app:trailLabel=":" />
+        <Key
+            android:popupKeyboard="@xml/kbd_popup_template"
+            android:codes="110"
+            android:keyLabel="n"
+            android:popupCharacters="ñ"
+            app:trailLabel=";" />
+        <Key
+            android:codes="109"
+            android:keyLabel="m"
+            app:trailLabel="/" />
+        <Key
+            android:codes="-2"
+            android:keyEdgeFlags="right"
+            android:keyIcon="@drawable/ic_backspace"
+            android:isRepeatable="true" />
+    </Row>
+    <Row
+        app:rowEdgeFlags="bottom"
+        app:rowType="normal">
+        <Key
+            android:codes="-4"
+            android:keyEdgeFlags="left"
+            android:keyLabel="123" />
+        <Key
+            android:codes="-6"
+            android:keyIcon="@drawable/ic_emoji" />
+        <Key
+            android:codes="-7"
+            android:keyLabel="," />
+        <Key
+            android:codes="32"
+            android:keyLabel="English (US)"
+            android:keyOutputText=" " />
+        <Key
+            android:codes="46"
+            android:keyLabel="." />
+        <Key
+            android:codes="-3"
+            android:keyEdgeFlags="right"
+            android:keyIcon="@drawable/ic_enter"
+            app:isAction="true" />
+    </Row>
+</Keyboard>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <EditText
+        android:id="@+id/shortcut_key"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="الاختصار، مثل: سل"
+        android:inputType="text"
+        android:maxLines="1" />
+    <EditText
+        android:id="@+id/shortcut_expansion"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="top|right"
+        android:hint="النص الكامل، مثل: السلام عليكم"
+        android:inputType="textMultiLine"
+        android:maxLines="3" />
+    <Spinner
+        android:id="@+id/shortcut_language"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+</LinearLayout>

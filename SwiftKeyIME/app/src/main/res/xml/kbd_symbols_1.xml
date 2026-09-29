@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Keyboard
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:keyHeight="48dp"
+    app:keyWidth="10%p"
+    app:horizontalGap="3dp"
+    app:verticalGap="3dp"
+    app:disablePreview="false"
+    app:keyTextWeight="normal">
+    <Row app:rowEdgeFlags="top">
+        <Key
+            app:codes="49"
+            app:keyLabel="1" />
+        <Key
+            app:codes="50"
+            app:keyLabel="2" />
+        <Key
+            app:codes="51"
+            app:keyLabel="3" />
+        <Key
+            app:codes="52"
+            app:keyLabel="4" />
+        <Key
+            app:codes="53"
+            app:keyLabel="5" />
+        <Key
+            app:codes="54"
+            app:keyLabel="6" />
+        <Key
+            app:codes="55"
+            app:keyLabel="7" />
+        <Key
+            app:codes="56"
+            app:keyLabel="8" />
+        <Key
+            app:codes="57"
+            app:keyLabel="9" />
+        <Key
+            app:codes="48"
+            app:keyLabel="0" />
+    </Row>
+    <Row>
+        <Key
+            app:codes="64"
+            app:keyLabel="\@" />
+        <Key
+            app:codes="35"
+            app:keyLabel="\#" />
+        <Key
+            app:codes="36"
+            app:keyLabel="$" />
+        <Key
+            app:codes="38"
+            app:keyLabel="&amp;" />
+        <Key
+            app:codes="95"
+            app:keyLabel="_" />
+        <Key
+            app:codes="45"
+            app:keyLabel="-" />
+        <Key
+            app:codes="40"
+            app:keyLabel="(" />
+        <Key
+            app:codes="41"
+            app:keyLabel=")" />
+        <Key
+            app:codes="61"
+            app:keyLabel="=" />
+        <Key
+            app:codes="37"
+            app:keyLabel="%" />
+    </Row>
+    <Row>
+        <Key
+            app:codes="-9"
+            app:keyLabel="{&amp;=}"
+            app:isAction="true" />
+        <Key
+            app:codes="34"
+            app:keyLabel="&quot;" />
+        <Key
+            app:codes="42"
+            app:keyLabel="*" />
+        <Key
+            app:codes="39"
+            app:keyLabel="'" />
+        <Key
+            app:codes="58"
+            app:keyLabel=":" />
+        <Key
+            app:codes="47"
+            app:keyLabel="/" />
+        <Key
+            app:codes="33"
+            app:keyLabel="!" />
+        <Key
+            app:codes="63"
+            app:keyLabel="\?" />
+        <Key
+            app:codes="43"
+            app:keyLabel="+" />
+        <Key
+            app:codes="-2"
+            app:keyIcon="@drawable/ic_backspace"
+            app:isRepeatable="true" />
+    </Row>
+    <Row app:rowEdgeFlags="bottom">
+        <Key
+            app:codes="-4"
+            app:keyLabel="ابت" />
+        <Key
+            app:codes="1548"
+            app:keyLabel="،" />
+        <Key
+            app:codes="32"
+            app:keyLabel="العربية" />
+        <Key
+            app:codes="46"
+            app:keyLabel="." />
+        <Key
+            app:codes="-3"
+            app:keyIcon="@drawable/ic_enter"
+            app:isAction="true" />
+    </Row>
+</Keyboard>

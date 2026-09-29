@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- نافذة الحروف البديلة. الموضع والحجم النهائيان يتبعان المفتاح المضغوط، بينما يمكن تعديل الحشو والوصف وتصميم AlternativePopupView من هذا المورد. -->
+<com.almlk.swiftkey.ime.AlternativePopupView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="58dp"
+    android:paddingLeft="5dp"
+    android:paddingTop="4dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="12dp"
+    android:clickable="false"
+    android:focusable="false"
+    android:contentDescription="الحروف البديلة" />

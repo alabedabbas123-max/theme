@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6F91BE"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#5B7CA8">
+        <LinearLayout
+            android:id="@+id/layouts_title_group"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="14dp">
+            <ImageButton
+                android:id="@+id/layouts_back"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="رجوع"
+                android:padding="10dp"
+                android:src="@drawable/ic_chevron_right"
+                android:tint="#FFFFFF" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="التخطيطات"
+                android:textColor="#FFFFFF"
+                android:textSize="21sp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/layouts_add"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_gravity="left|center_vertical"
+            android:background="@android:color/transparent"
+            android:minWidth="0dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="إضافة"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+    </FrameLayout>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingTop="18dp">
+        <LinearLayout
+            android:id="@+id/layouts_cards"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp" />
+    </HorizontalScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/layouts_tab_english"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="English (US)"
+                android:textColor="#D6E3F2"
+                android:textSize="17sp" />
+            <View
+                android:id="@+id/layouts_tab_english_line"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/layouts_tab_arabic"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="العربية"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+            <View
+                android:id="@+id/layouts_tab_arabic_line"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

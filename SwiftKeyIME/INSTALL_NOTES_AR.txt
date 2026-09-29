@@ -1,0 +1,25 @@
+تعليمات نسخة AIDE Java 6
+
+أُزيلت جميع إعدادات التصغير والتحسين وملفات ProGuard من المشروع. لا يحتوي build.gradle على buildTypes أو minifyEnabled أو proguardFiles.
+
+الحل البديل يعتمد على مصدر Java فقط:
+- استخدام sourceCompatibility وtargetCompatibility بقيمة Java 6 لإنتاج Class بإصدار 50 الأبسط والأكثر توافقًا مع AIDE القديم.
+- إزالة diamond operator وجميع خصائص Java 7 من المصدر.
+- تقسيم الخدمة إلى Base وPart1 حتى Part5.
+- تقسيم الجزء الذي أبلغ عنه AIDE تحديدًا إلى Part2A وPart2B وPart2C.
+- أصبح AlmlkImeRuntimePart2 نفسه جسرًا فارغًا بحجم Class متوقع 359 بايت فقط.
+- جعل AlmlkImeRuntime وAlmlkImeServiceCore جسرين فارغين صغيرين.
+
+لا يوجد app/libs أو JAR أو AAR أو Class مسبق أو fileTree أو files(...) أو ملف إعدادات ProGuard.
+مكتبات AndroidX وMaterial وRecyclerView تثبت خارجيًا بواسطة Gradle فقط.
+
+تم اختبار كامل المصدر باستخدام ECJ 4.6.1 بوضع Java 6 مع Debug، ثم نجحت مرحلة تحويله إلى classes.dex.
+
+استخرج الحزمة في مجلد جديد باسم AlmlkKeyboard-AIDE-Java6. لا تضعها فوق أي مشروع سابق، حتى لا يستخدم AIDE ملفات classesrelease القديمة.
+
+بعد إصلاحات InflateException الحالية:
+1) نفّذ Clean Project داخل AIDE قبل البناء.
+2) نفّذ Rebuild Project كاملًا، ولا تستخدم APK ناتجًا من Build تزايدي قديم.
+3) احذف النسخة السابقة من الهاتف ثم ثبّت APK الجديد.
+4) جذر الكيبورد الحالي FrameLayout قياسي ولا يعتمد على AlmlkInputView؛ إذا ظهر اسم AlmlkInputView في سجل جديد فهذا يعني أن APK القديم ما زال مثبتًا أو أن AIDE أعاد استخدام نواتج قديمة.
+5) SettingsHomeRowView الحالي لا يستدعي R.styleable إطلاقًا؛ ظهور هذا الاستدعاء يعني أيضًا وجود DEX قديم.

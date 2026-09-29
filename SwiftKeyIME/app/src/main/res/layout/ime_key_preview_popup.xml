@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- نافذة تكبير الحرف التي تظهر مباشرة فوق المفتاح أثناء الضغط. -->
+<com.almlk.swiftkey.ime.AlternativePopupView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="68dp"
+    android:paddingLeft="4dp"
+    android:paddingTop="4dp"
+    android:paddingRight="4dp"
+    android:paddingBottom="12dp"
+    android:clickable="false"
+    android:focusable="false"
+    android:contentDescription="معاينة الحرف المكبرة" />

@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:layoutDirection="rtl">
+    <!-- المحتوى الرئيسي — يملأ الشاشة بالكامل -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- شريط العنوان العلوي ثابت -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="#FFFFFF">
+            <ImageButton
+                android:id="@+id/themes_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@android:color/transparent"
+                android:padding="14dp"
+                android:src="@drawable/ic_chevron_right"
+                android:contentDescription="رجوع" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="السمات"
+                android:textSize="23sp"
+                android:textColor="#111111" />
+            <ImageButton
+                android:id="@+id/theme_create"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left|center_vertical"
+                android:background="@android:color/transparent"
+                android:padding="14dp"
+                android:src="@drawable/ic_edit"
+                android:contentDescription="إنشاء سمة" />
+        </FrameLayout>
+        <!-- شريط الفئات ثابت -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:scrollbars="none"
+            android:background="#FFFFFF">
+            <LinearLayout
+                android:id="@+id/theme_categories"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:layoutDirection="rtl" />
+        </HorizontalScrollView>
+        <!-- محتوى قابل للتمرير العمودي — يملأ بقية الشاشة -->
+        <ScrollView
+            android:id="@+id/themes_main_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:overScrollMode="never"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:paddingBottom="80dp">
+                <!-- قسم «سماتي» -->
+                <TextView
+                    android:id="@+id/theme_section_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="right|center_vertical"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:text="سماتي"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+                <HorizontalScrollView
+                    android:id="@+id/custom_strip_scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="152dp"
+                    android:scrollbars="none">
+                    <LinearLayout
+                        android:id="@+id/custom_strip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:layoutDirection="rtl" />
+                </HorizontalScrollView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:background="#F0F0F0" />
+                <!-- قسم «الثيمات الافتراضية» -->
+                <TextView
+                    android:id="@+id/builtin_section_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="right|center_vertical"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:text="الثيمات الافتراضية"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+                <HorizontalScrollView
+                    android:id="@+id/default_strip_scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="152dp"
+                    android:scrollbars="none">
+                    <LinearLayout
+                        android:id="@+id/default_strip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:layoutDirection="rtl" />
+                </HorizontalScrollView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:background="#F0F0F0" />
+                <!-- أقسام مكتبة ثيماتي -->
+                <LinearLayout
+                    android:id="@+id/all_themes_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <!-- شريط التبويبات السفلي — عائم لا يشغل مساحة -->
+    <include
+        layout="@layout/settings_bottom_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" />
+    <!-- زر التجربة — عائم فوق المحتوى -->
+    <Button
+        android:id="@+id/theme_try"
+        android:layout_width="210dp"
+        android:layout_height="54dp"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/bg_add_language_button"
+        android:text="⌨  التجربة الآن"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+    <!-- حقل تجربة مباشر — يظهر فوق الكيبورد مثل لقطة المرجع عند اختيار أي ثيم أو زر «التجربة الآن» -->
+    <LinearLayout
+        android:id="@+id/theme_test_bar"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="#E6E6E6">
+        <EditText
+            android:id="@+id/theme_test_input"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="right|center_vertical"
+            android:layoutDirection="rtl"
+            android:textDirection="rtl"
+            android:singleLine="true"
+            android:inputType="text|textCapSentences"
+            android:imeOptions="flagNoExtractUi|actionDone"
+            android:paddingLeft="14dp"
+            android:paddingRight="18dp"
+            android:text="جرب الإعداد"
+            android:textColor="#111111"
+            android:textSize="22sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#4F86E8" />
+    </LinearLayout>
+
+</FrameLayout>

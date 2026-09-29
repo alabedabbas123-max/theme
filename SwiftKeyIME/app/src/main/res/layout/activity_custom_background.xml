@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FA"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#FFFFFF">
+        <ImageButton
+            android:id="@+id/background_picker_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="left|center_vertical"
+            android:background="@android:color/transparent"
+            android:contentDescription="رجوع"
+            android:padding="14dp"
+            android:src="@drawable/ic_chevron_right" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="62dp"
+            android:gravity="left|center_vertical"
+            android:text="Select An Image"
+            android:textColor="#202124"
+            android:textSize="20sp" />
+    </FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="26dp">
+            <Button
+                android:id="@+id/background_choose_photo"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/bg_custom_photo_button"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="▧  Choose My Photos"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <LinearLayout
+                android:id="@+id/background_category_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

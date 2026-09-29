@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAFAFA"
+    android:layoutDirection="rtl">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#FFFFFF">
+        <ImageButton
+            android:id="@+id/add_language_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right|center_vertical"
+            android:background="@android:color/transparent"
+            android:contentDescription="رجوع"
+            android:padding="16dp"
+            android:src="@drawable/ic_chevron_right" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="إضافة لغة"
+            android:textColor="#080808"
+            android:textSize="23sp" />
+    </FrameLayout>
+    <EditText
+        android:id="@+id/language_search"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/bg_language_search"
+        android:hint="ابحث عن لغة"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:singleLine="true"
+        android:textColor="#111111"
+        android:textColorHint="#777777"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="right|center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="جميع اللغات"
+        android:textColor="#555555"
+        android:textSize="14sp" />
+    <ListView
+        android:id="@+id/all_languages_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#E2E2E2"
+        android:dividerHeight="1dp"
+        android:overScrollMode="never" />
+</LinearLayout>
